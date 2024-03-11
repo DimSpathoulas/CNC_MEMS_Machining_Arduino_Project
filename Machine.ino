@@ -128,6 +128,7 @@ void EXEC(int a[]) {
   
   i=0;
   j=0;
+  
     /*s1=step1.currentPosition();
     s2=step2.currentPosition();
     analogWrite(R,255);
@@ -136,6 +137,7 @@ void EXEC(int a[]) {
     step2.runToPosition();
     step2.moveTo(s2*2048.);
     step2.runToPosition();  */
+  
     servo.write(0.0);
     analogWrite(R,0);
     analogWrite(G,255);
@@ -223,8 +225,4 @@ int ser() {
         servo.write(0.0);
         delay(dt*3);
         
-}
-
-  void loop() {
-  // put your main code here, to run repeatedly:
 }
